@@ -6,10 +6,10 @@ int main() {
     char password[20];
 
     printf("Enter username: ");
-    gets(username);  // Vulnerable
+    gets(username);
 
     printf("Enter password: ");
-    gets(password);  // Vulnerable
+    gets(password);
 
     if (strcmp(username, "admin") == 0 && strcmp(password, "1234") == 0) {
         printf("Login successful\n");
